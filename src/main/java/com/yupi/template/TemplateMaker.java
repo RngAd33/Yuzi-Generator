@@ -497,9 +497,12 @@ public class TemplateMaker {
         return resultList;
     }
 
-    // 已废弃
+    /**
+     * 测试方法
+     *
+     * @param args
+     */
     public static void main(String[] args) {
-
         // 构造 meta 配置参数
         Meta meta = new Meta();
         meta.setName("Spring-Boot-generator");

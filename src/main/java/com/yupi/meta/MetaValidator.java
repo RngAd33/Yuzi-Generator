@@ -172,43 +172,5 @@ public class MetaValidator {
         meta.setAuthor(author);
         meta.setCreateTime(createTime);
     }
-    /* 以上为简化版本
-    private static void validAndFillMetaRoot(Meta meta) {
-        String name = meta.getName();
-        if (StrUtil.isBlank(name)) {
-            name = "acm-template-pro-generator";
-            meta.setName(name);
-        }
 
-        String description = meta.getDescription();
-        if (StrUtil.isEmpty(description)) {
-            description = "ACM 示例模板生成器";
-            meta.setDescription(description);
-        }
-
-        String basePackage = meta.getBasePackage();
-        if (StrUtil.isBlank(basePackage)){
-            basePackage = "com.yupi";
-            meta.setBasePackage(basePackage);
-        }
-
-        String version = meta.getVersion();
-        if (StrUtil.isEmpty(version)) {
-            version = "1.0";
-            meta.setVersion(version);
-        }
-
-        String author = meta.getAuthor();
-        if (StrUtil.isEmpty(author)) {
-            author = "RngAd33";
-            meta.setAuthor(author);
-        }
-
-        String createTime = meta.getCreateTime();
-        if (StrUtil.isEmpty(createTime)) {
-            createTime = "2024-02-24";
-            meta.setCreateTime(createTime);
-        }
-    }
-    */
 }

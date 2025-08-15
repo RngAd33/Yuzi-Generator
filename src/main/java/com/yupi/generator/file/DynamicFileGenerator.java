@@ -24,18 +24,16 @@ public class DynamicFileGenerator {
      * @throws IOException
      * @throws TemplateException
      */
-    public static void doGenerate(String inputPath, String outputPath, Object model) throws IOException, TemplateException {
+    public static void doGenerate(String inputPath, String outputPath, Object model)
+            throws IOException, TemplateException {
 
         Template template = getTemplate(inputPath);
-
         // 文件不存在则创建文件和父目录
         if (!FileUtil.exist(outputPath)) {
             FileUtil.touch(outputPath);
         }
-
         // 指定生成的文件
         Writer out = new FileWriter(outputPath);
-
         // 生成文件
         try {
             template.process(model, out);

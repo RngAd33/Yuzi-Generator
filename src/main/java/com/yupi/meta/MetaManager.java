@@ -16,6 +16,7 @@ public class MetaManager {
 
     /**
      * 获取meta（双检锁机制，确保在多线程环境下只初始化一次Meta对象）
+     *
      * @return meta
      */
     public static Meta getMetaObject() {
@@ -34,6 +35,7 @@ public class MetaManager {
 
     /**
      * 初始化meta
+     *
      * @return newMeta
      */
     private static Meta initMeta() {

@@ -2,7 +2,7 @@
   "name": "Spring-Boot-generator",
   "description": "SpringBoot示例模板生成器",
   "fileConfig": {
-    "sourceRootPath": "E:/document/资料/计算机/A小金库/Java/yuzi-generator/yuzi-generator-maker/.temp/1/springboot-init",
+    "sourceRootPath": "E:/document/资料/计算机/A小金库/Java/yuzi-generator/yuzi-generator-maker/tmp/1/springboot-init",
     "files": [
       {
         "groupKey": "post",
