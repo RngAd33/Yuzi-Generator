@@ -3,11 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.yupi</groupId>
     <artifactId>yuzi-generator-maker</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
@@ -15,12 +13,26 @@
     </properties>
 
     <dependencies>
+        <!-- FreeMarker 模板引擎 -->
+        <!-- https://freemarker.apache.org/index.html -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.34</version>
+        </dependency>
+        <!-- Picocli -->
+        <!-- https://picocli.info -->
+        <dependency>
+            <groupId>info.picocli</groupId>
+            <artifactId>picocli</artifactId>
+            <version>4.7.7</version>
+        </dependency>
         <!-- HuTool 工具类-->
         <!-- https://doc.hutool.cn/ -->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.8.16</version>
+            <version>5.8.43</version>
         </dependency>
         <!-- Commons -->
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
@@ -34,7 +46,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
+            <version>1.18.38</version>
             <scope>provided</scope>
         </dependency>
         <!-- JUnit -->
@@ -44,30 +56,16 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-        <!-- Picocli -->
-        <!-- https://picocli.info -->
-        <dependency>
-            <groupId>info.picocli</groupId>
-            <artifactId>picocli</artifactId>
-            <version>4.7.5</version>
-        </dependency>
         <!-- Log4j + Slf4j 日志管理库-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.19.0</version>
+            <version>2.25.3</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j2-impl</artifactId>
             <version>2.19.0</version>
-        </dependency>
-        <!-- FreeMarker 模板引擎 -->
-        <!-- https://freemarker.apache.org/index.html -->
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>2.3.32</version>
         </dependency>
     </dependencies>
 
@@ -84,7 +82,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.yupi.Main</mainClass>  <!-- 需要替换为你的主类的完整类名 -->
+                            <mainClass>com.yupi.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

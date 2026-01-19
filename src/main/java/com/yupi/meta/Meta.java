@@ -20,6 +20,9 @@ public class Meta {
     private FileConfig fileConfig;
     private ModelConfig modelConfig;
 
+    /**
+     * 文件配置
+     */
     @NoArgsConstructor
     @Data
     public static class FileConfig {
@@ -43,6 +46,9 @@ public class Meta {
         }
     }
 
+    /**
+     * 模型配置
+     */
     @NoArgsConstructor
     @Data
     public static class ModelConfig {
